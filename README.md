@@ -1,2 +1,56 @@
-# Password_Strength_Analyzer
-A Python-based tool that analyzes password strength using the zxcvbn library and generates custom wordlists using user-provided inputs. Designed for ethical hacking, cybersecurity awareness, and penetration testing simulations. Includes both a command-line interface and a user-friendly GUI.
+#  Password Strength Analyzer & Custom Wordlist Generator
+
+This project is a Python-based tool that helps users:
+- Analyze the strength of a given password using the `zxcvbn` library.
+- Generate custom wordlists based on user-specific inputs like names, birthdates, and pet names using leetspeak and variations.
+
+---
+
+##  Features
+
+- Estimate password strength and crack time.
+- Get security suggestions for weak passwords.
+- Generate personalized password wordlists with years and leetspeak.
+- Simple command-line interface.
+- Easy-to-use graphical user interface (GUI) with Tkinter.
+
+---
+
+##  Tools & Libraries
+
+- Python 3.x
+- [`zxcvbn`](https://github.com/dropbox/zxcvbn) – Password strength estimator
+- `nltk`, `unidecode` – For future enhancements (included in `requirements.txt`)
+- `tkinter` – For GUI (built-in with Python)
+
+---
+
+##  Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+### 2.Create and activate a virtual environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate     # On Windows: .venv\Scripts\activate
+```
+### 3.Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+### 4.Command-Line Interface (CLI)
+
+```bash
+python cli.py --password MySecret123! --inputs name birthdate petname --export
+```
+### 5.Graphical Interface (GUI)
+
+```bash
+python gui.py
+```
